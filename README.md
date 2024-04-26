@@ -5,17 +5,17 @@
 
 
 # Features : 
--Login/SignUp
-    -Sign IN /Sign UP Form
-    -Redirect to browse Page
+- Login/SignUp
+    - Sign IN /Sign UP Form
+    - Redirect to browse Page
 - Browse (after successful Authentication)
-    -Header
-    -Main Movie
-        -Trailer in Background
-        -Title and Description
-        -Movie Suggestions
+    - Header
+    - Main Movie
+        - Trailer in Background
+        - Title and Description
+        - Movie Suggestions
             - MovieLists * N
--NetflixGPT
-    -SearchBar
-    -Movie Suggestion
+- NetflixGPT
+    - SearchBar
+    - Movie Suggestion
 
