@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.API_OPTIONS = exports.USER_AVATAR = exports.LOGO = void 0;
+exports.IMG_CDN_URL = exports.API_OPTIONS = exports.USER_AVATAR = exports.LOGO = void 0;
 var LOGO = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"; // export const USER_AVATAR = "https://avatars.githubusercontent.com/u/63881556?v=4";
 
 exports.LOGO = LOGO;
@@ -17,3 +17,5 @@ var API_OPTIONS = {
   }
 };
 exports.API_OPTIONS = API_OPTIONS;
+var IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+exports.IMG_CDN_URL = IMG_CDN_URL;
