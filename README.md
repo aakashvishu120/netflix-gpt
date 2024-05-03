@@ -30,7 +30,15 @@
 - Embeded the Youtube Video and Make it autoplay, Mute and Hide related videos
 - Setup Flowbite icon in tailwind
 - Tailwind Classes to make Main Container look awesome
-
+- Build Secondary Component
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN URL
+- Made the browse page amazing with tailwind CSS
+- usePopularMovies Custom hook 
+- GPT Search Page
+- GPT Search Bar
+- Multi-language Feature in our App
 
 
 

@@ -3,12 +3,14 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.UPCOMING_MOVIES = exports.TOP_RATED_MOVIES = exports.POPULAR_MOVIES = exports.NOW_PLAYING_MOVIES_URL = exports.IMG_CDN_URL = exports.API_OPTIONS = exports.USER_AVATAR = exports.LOGO = void 0;
+exports.SUPPORTED_LANGUAGES = exports.UPCOMING_MOVIES = exports.TOP_RATED_MOVIES = exports.POPULAR_MOVIES = exports.NOW_PLAYING_MOVIES_URL = exports.IMG_CDN_URL = exports.API_OPTIONS = exports.BACKGROUND_IMAGE = exports.USER_AVATAR = exports.LOGO = void 0;
 var LOGO = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"; // export const USER_AVATAR = "https://avatars.githubusercontent.com/u/63881556?v=4";
 
 exports.LOGO = LOGO;
 var USER_AVATAR = "https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABfjwXqIYd3kCEU6KWsiHSHvkft8VhZg0yyD50a_pHXku4dz9VgxWwfA2ontwogStpj1NE9NJMt7sCpSKFEY2zmgqqQfcw1FMWwB9.png?r=229";
 exports.USER_AVATAR = USER_AVATAR;
+var BACKGROUND_IMAGE = "https://assets.nflxext.com/ffe/siteui/vlv3/c7f07b68-7989-4ff7-a31e-11c17dcc2fea/fcf685b8-3f9f-42d8-9af3-4bb86fa5a3b8/IN-en-20240422-popsignuptwoweeks-perspective_alpha_website_large.jpg";
+exports.BACKGROUND_IMAGE = BACKGROUND_IMAGE;
 var API_OPTIONS = {
   method: 'GET',
   headers: {
@@ -27,3 +29,17 @@ var TOP_RATED_MOVIES = "https://api.themoviedb.org/3/movie/top_rated?page=1";
 exports.TOP_RATED_MOVIES = TOP_RATED_MOVIES;
 var UPCOMING_MOVIES = "https://api.themoviedb.org/3/movie/upcoming?page=1";
 exports.UPCOMING_MOVIES = UPCOMING_MOVIES;
+var SUPPORTED_LANGUAGES = [{
+  identifier: "en",
+  name: "English"
+}, {
+  identifier: "hindi",
+  name: "Hindi"
+}, {
+  identifier: "spanish",
+  name: "Spanish"
+}, {
+  identifier: "fr",
+  name: "French"
+}];
+exports.SUPPORTED_LANGUAGES = SUPPORTED_LANGUAGES;
