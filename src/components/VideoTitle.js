@@ -8,7 +8,7 @@ const VideoTitle = ({title, overview}) => {
         <div className=''>
             <button className='bg-white font-semibold text-lg text-black p-2 w-32 rounded-md border-2 hover:bg-opacity-80'> 
             <svg className="w-[40px] h-[25px] inline dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="5 5 15 15">
-            <path fillRule="evenodd" d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z" clip-rule="evenodd"/>
+            <path fillRule="evenodd" d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z" clipRule="evenodd"/>
             </svg>
             Play</button>
 

@@ -16,6 +16,9 @@ var _moviesSlice = require("../utils/moviesSlice");
 var useTopRatedMovies = function useTopRatedMovies() {
   //Fetch Data from TMDb API and update store
   var dispatch = (0, _reactRedux.useDispatch)();
+  var topRatedMovies = (0, _reactRedux.useSelector)(function (store) {
+    return store.movies.topRatedMovies;
+  });
 
   var getTopRatedMovies = function getTopRatedMovies() {
     var data, json;
@@ -44,7 +47,7 @@ var useTopRatedMovies = function useTopRatedMovies() {
   };
 
   (0, _react.useEffect)(function () {
-    getTopRatedMovies();
+    !topRatedMovies && getTopRatedMovies();
   }, []);
 };
 

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.SUPPORTED_LANGUAGES = exports.UPCOMING_MOVIES = exports.TOP_RATED_MOVIES = exports.POPULAR_MOVIES = exports.NOW_PLAYING_MOVIES_URL = exports.IMG_CDN_URL = exports.API_OPTIONS = exports.BACKGROUND_IMAGE = exports.USER_AVATAR = exports.LOGO = void 0;
+exports.TMDB_SEARCH_API = exports.RAPID_SEARCH_API = exports.NO_IMAGE = exports.OPENAI_KEY = exports.SUPPORTED_LANGUAGES = exports.UPCOMING_MOVIES = exports.TOP_RATED_MOVIES = exports.POPULAR_MOVIES = exports.NOW_PLAYING_MOVIES_URL = exports.IMG_CDN_URL = exports.RAPID_API_OPTIONS = exports.API_OPTIONS = exports.BACKGROUND_IMAGE = exports.USER_AVATAR = exports.LOGO = void 0;
 var LOGO = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"; // export const USER_AVATAR = "https://avatars.githubusercontent.com/u/63881556?v=4";
 
 exports.LOGO = LOGO;
@@ -15,10 +15,18 @@ var API_OPTIONS = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhYzJkNDQ5MmE3OTE4YWExYzA0MTM0ZWVmYzQyMmM3YSIsInN1YiI6IjY2MmU1ZDM2NWE3ODg0MDEyN2MxY2Y0NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jfYc9uhPohwN_cdrG1gNcZlIqiALxOONcvXbax3erB8'
+    Authorization: 'Bearer ' + process.env.REACT_APP_TMDB_KEY
   }
 };
 exports.API_OPTIONS = API_OPTIONS;
+var RAPID_API_OPTIONS = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': process.env.REACT_APP_RAPID_KEY,
+    'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
+  }
+};
+exports.RAPID_API_OPTIONS = RAPID_API_OPTIONS;
 var IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
 exports.IMG_CDN_URL = IMG_CDN_URL;
 var NOW_PLAYING_MOVIES_URL = 'https://api.themoviedb.org/3/movie/now_playing?page=1';
@@ -43,3 +51,11 @@ var SUPPORTED_LANGUAGES = [{
   name: "French"
 }];
 exports.SUPPORTED_LANGUAGES = SUPPORTED_LANGUAGES;
+var OPENAI_KEY = "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";
+exports.OPENAI_KEY = OPENAI_KEY;
+var NO_IMAGE = 'https://cdn.pixabay.com/photo/2015/12/22/04/00/photo-1103594_1280.png';
+exports.NO_IMAGE = NO_IMAGE;
+var RAPID_SEARCH_API = 'https://streaming-availability.p.rapidapi.com/search/title';
+exports.RAPID_SEARCH_API = RAPID_SEARCH_API;
+var TMDB_SEARCH_API = "https://api.themoviedb.org/3/search/movie";
+exports.TMDB_SEARCH_API = TMDB_SEARCH_API;

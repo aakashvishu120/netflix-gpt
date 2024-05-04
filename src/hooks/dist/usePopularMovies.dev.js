@@ -15,7 +15,11 @@ var _moviesSlice = require("../utils/moviesSlice");
 
 var usePopularMovies = function usePopularMovies() {
   //Fetch Data from TMDb API and update store
-  var dispatch = (0, _reactRedux.useDispatch)();
+  var dispatch = (0, _reactRedux.useDispatch)(); //memoization
+
+  var popularMovies = (0, _reactRedux.useSelector)(function (store) {
+    return store.movies.popularMovies;
+  });
 
   var getPopularMovies = function getPopularMovies() {
     var data, json;
@@ -44,7 +48,7 @@ var usePopularMovies = function usePopularMovies() {
   };
 
   (0, _react.useEffect)(function () {
-    getPopularMovies();
+    !popularMovies && getPopularMovies();
   }, []);
 };
 

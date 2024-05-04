@@ -16,6 +16,9 @@ var _moviesSlice = require("../utils/moviesSlice");
 var useUpcomingMovies = function useUpcomingMovies() {
   //Fetch Data from TMDb API and update store
   var dispatch = (0, _reactRedux.useDispatch)();
+  var upcomingMovies = (0, _reactRedux.useSelector)(function (store) {
+    return store.movies.upcomingMovies;
+  });
 
   var getUpcomingMovies = function getUpcomingMovies() {
     var data, json;
@@ -44,7 +47,7 @@ var useUpcomingMovies = function useUpcomingMovies() {
   };
 
   (0, _react.useEffect)(function () {
-    getUpcomingMovies();
+    !upcomingMovies && getUpcomingMovies();
   }, []);
 };
 

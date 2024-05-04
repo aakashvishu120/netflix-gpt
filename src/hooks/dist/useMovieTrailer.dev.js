@@ -14,7 +14,11 @@ var _moviesSlice = require("../utils/moviesSlice");
 var _react = require("react");
 
 var useMovieTrailer = function useMovieTrailer(movieId) {
-  var dispatch = (0, _reactRedux.useDispatch)();
+  var dispatch = (0, _reactRedux.useDispatch)(); //memoization
+
+  var trailerVideo = (0, _reactRedux.useSelector)(function (store) {
+    return store.movies.trailerVideo;
+  });
 
   var getMovieVideos = function getMovieVideos() {
     var data, json, filterData, trailer;
@@ -47,7 +51,7 @@ var useMovieTrailer = function useMovieTrailer(movieId) {
   };
 
   (0, _react.useEffect)(function () {
-    getMovieVideos();
+    !trailerVideo && getMovieVideos();
   }, []);
 };
 

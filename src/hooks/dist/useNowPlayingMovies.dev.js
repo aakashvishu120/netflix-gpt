@@ -15,7 +15,11 @@ var _moviesSlice = require("../utils/moviesSlice");
 
 var useNowPlayingMovies = function useNowPlayingMovies() {
   //Fetch Data from TMDb API and update store
-  var dispatch = (0, _reactRedux.useDispatch)();
+  var dispatch = (0, _reactRedux.useDispatch)(); //when user flow is back and forth then avoid calling api every time //memoization
+
+  var nowPlayingMovies = (0, _reactRedux.useSelector)(function (store) {
+    return store.movies.nowPlayingMovies;
+  });
 
   var getNowPlayingMovies = function getNowPlayingMovies() {
     var data, json;
@@ -44,7 +48,9 @@ var useNowPlayingMovies = function useNowPlayingMovies() {
   };
 
   (0, _react.useEffect)(function () {
-    getNowPlayingMovies();
+    if (!nowPlayingMovies) {
+      getNowPlayingMovies();
+    }
   }, []);
 };
 
