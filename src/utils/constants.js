@@ -38,8 +38,6 @@ export const SUPPORTED_LANGUAGES = [
     {identifier : "fr" , name:"French" },
 ];
 
-export const OPENAI_KEY = "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";
-
 export const NO_IMAGE = 'https://cdn.pixabay.com/photo/2015/12/22/04/00/photo-1103594_1280.png';
 
 export const RAPID_SEARCH_API = 'https://streaming-availability.p.rapidapi.com/search/title';

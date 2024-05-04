@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.TMDB_SEARCH_API = exports.RAPID_SEARCH_API = exports.NO_IMAGE = exports.OPENAI_KEY = exports.SUPPORTED_LANGUAGES = exports.UPCOMING_MOVIES = exports.TOP_RATED_MOVIES = exports.POPULAR_MOVIES = exports.NOW_PLAYING_MOVIES_URL = exports.IMG_CDN_URL = exports.RAPID_API_OPTIONS = exports.API_OPTIONS = exports.BACKGROUND_IMAGE = exports.USER_AVATAR = exports.LOGO = void 0;
+exports.TMDB_SEARCH_API = exports.RAPID_SEARCH_API = exports.NO_IMAGE = exports.SUPPORTED_LANGUAGES = exports.UPCOMING_MOVIES = exports.TOP_RATED_MOVIES = exports.POPULAR_MOVIES = exports.NOW_PLAYING_MOVIES_URL = exports.IMG_CDN_URL = exports.RAPID_API_OPTIONS = exports.API_OPTIONS = exports.BACKGROUND_IMAGE = exports.USER_AVATAR = exports.LOGO = void 0;
 var LOGO = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"; // export const USER_AVATAR = "https://avatars.githubusercontent.com/u/63881556?v=4";
 
 exports.LOGO = LOGO;
@@ -51,8 +51,6 @@ var SUPPORTED_LANGUAGES = [{
   name: "French"
 }];
 exports.SUPPORTED_LANGUAGES = SUPPORTED_LANGUAGES;
-var OPENAI_KEY = "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";
-exports.OPENAI_KEY = OPENAI_KEY;
 var NO_IMAGE = 'https://cdn.pixabay.com/photo/2015/12/22/04/00/photo-1103594_1280.png';
 exports.NO_IMAGE = NO_IMAGE;
 var RAPID_SEARCH_API = 'https://streaming-availability.p.rapidapi.com/search/title';
