@@ -39,6 +39,16 @@
 - GPT Search Page
 - GPT Search Bar
 - Multi-language Feature in our App
+- Gpt Search Rapid API 
+- GPT search API Call
+- Fetch GPT movie suggestion from TMDB 
+- created GPT Slice added date
+- Reused Movie List comoponent to make movie suggestion container
+- Memoization
+- Added .env file
+- Adding .env file to gitignore
+- Made our site Responsive
+
 
 
 

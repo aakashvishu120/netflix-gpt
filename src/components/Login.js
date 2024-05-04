@@ -69,16 +69,16 @@ const Login = () => {
         <div>
             <Header/>
             <div className='absolute'>
-                <img className='min-w-[1320px]' src={BACKGROUND_IMAGE} alt="bgImage" />
+                <img className='h-screen  md:min-w-[1515px] object-cover md:object-none' src={BACKGROUND_IMAGE} alt="bgImage" />
             </div>
-            <form onSubmit={(e)=>e.preventDefault()} className='max-w-[400px] h-[600px] absolute p-12 bg-black/80 my-28 mx-auto left-0 right-0 text-white rounded-md'>
-                <h1 className='font-bold text-3xl py-4 m-2'>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
+            <form onSubmit={(e)=>e.preventDefault()} className='w-full md:max-w-[400px] md:h-[500px] absolute p-12 bg-black/80 my-28 mx-auto left-0 right-0 text-white rounded-md'>
+                <h1 className='md:font-bold md:text-3xl text-lg md:py-4 m-2'>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
 
                 {!isSignInForm && <input ref={name} type="text" placeholder='Full Name' className='p-4 m-2 w-full bg-black/30 rounded-md focus:border-white border-2 border-solid' />}
 
-                <input ref={email} type="text" placeholder='Email' className='p-4 m-2 w-full bg-black/30 rounded-md focus:border-white border-2 border-solid' />
+                <input ref={email} type="text" placeholder='Email' className=' p-2 md:p-4 m-2 w-full bg-black/30 rounded-md focus:border-white border-2 border-solid' />
 
-                <input ref={password} type="password" placeholder='Password' className='p-4 m-2 w-full bg-black/30 rounded-md focus:border-white border-2 border-solid' />
+                <input ref={password} type="password" placeholder='Password' className='p-2 md:p-4 m-2 w-full bg-black/30 rounded-md focus:border-white border-2 border-solid' />
                 <p className='m-2 text-red-500'>{errorMessage}</p>
 
                 <button className='py-2 m-2 bg-red-600 rounded-md w-full' onClick={handleButtonClick}>{isSignInForm ? "Sign In" : "Sign Up"}</button>
